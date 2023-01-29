@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <button id="bold" class="button-option format">
+          <i class="fa fa-bold" aria-hidden="true"></i>
+        </button>
+        <button id="italic" class="button-option format">
+          <i class="fa fa-italic" aria-hidden="true"></i>
+        </button>
+        <button id="underline" class="button-option format">
+          <i class="fa fa-underline" aria-hidden="true"></i>
+        </button>
+        <button id="strikethrough" class="button-option format">
+          <i class="fa fa-strikethrough" aria-hidden="true"></i>
+        </button>
+        <button id="superscript" class="button-option script">
+          <i class="fa fa-superscript" aria-hidden="true"></i>
+        </button>
+        <button id="subscript" class="button-option script">
+          <i class="fa fa-subscript" aria-hidden="true"></i>
+        </button>
+
+        <!-- List -->
+        <button id="insertOrderedList" class="button-option">
+          <i class="fa fa-list-ol" aria-hidden="true"></i>
+        </button>
+        <button id="insertUnorderedList" class="button-option">
+          <i class="fa fa-list-ul" aria-hidden="true"></i>
+        </button>
+
+        <!-- Undo Redo -->
+        <button id="undo" class="button-option">
+          <i class="fa fa-undo" aria-hidden="true"></i>
+        </button>
+        <button id="redo" class="button-option">
+          <i class="fa fa-repeat" aria-hidden="true"></i>
+        </button>
+
+        <!-- Link -->
+        <button id="createLink" class="adv-button-option">
+          <i class="fa fa-link" aria-hidden="true"></i>
+        </button>
+        <button id="unlink" class="button-option">
+          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+        </button>
+
+        <!-- Alignment -->
+        <button id="justifyLeft" class="button-option align">
+          <i class="fa fa-align-left" aria-hidden="true"></i>
+        </button>
+        <button id="justifyCenter" class="button-option align">
+          <i class="fa fa-align-center" aria-hidden="true"></i>
+        </button>
+        <button id="justifyRight" class="button-option align">
+          <i class="fa fa-align-right" aria-hidden="true"></i>
+        </button>
+        <button id="justifyFull" class="button-option align">
+          <i class="fa fa-align-justify" aria-hidden="true"></i>
+        </button>
+        <button id="indent" class="button-option spacing">
+          <i class="fa fa-indent" aria-hidden="true"></i>
+        </button>
+        <button id="outdent" class="button-option spacing">
+          <i class="fa fa-outdent" aria-hidden="true"></i>
+        </button>
+
+        <!-- Headings -->
+        <select id="formatBlock" class="adv-button-option">
+          <option value="H1">H1</option>
+          <option value="H2">H2</option>
+          <option value="H3">H3</option>
+          <option value="H4">H4</option>
+          <option value="H5">H5</option>
+          <option value="H6">H6</option>
+        </select>
+
+        <!-- Font -->
+        <select id="fontName" class="adv-button-option"></select>
+        <select id="fontSize" class="adv-button-option"></select>
+
+        <!-- Color -->
+        <div class="input-wrapper">
+          <input type="color" id="foreColor" class="adv-button-option" />
+          <label for="foreColor">Font Color</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="color" id="backColor" class="adv-button-option" />
+          <label for="backColor">Highlight Color</label>
+        </div>
+      </div>
+      <div id="text-input" contenteditable="true"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

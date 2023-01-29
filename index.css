@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(54, 91, 201);
+}
+.container {
+    background-color: aliceblue;
+    width: 80vmin;
+    min-height: 90vh;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+.options {
+    /* height: 90vmin; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8em;
+}
+button{
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    border: none;
+    background-color: rgb(186, 207, 225);
+    outline: 2px solid red;
+    outline: none;
+    color: rgb(32, 27, 27);
+}
+select {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #020929;
+}
+.options label, 
+.options select {
+    font-family: "Poppins", sans-serif;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+input[type="color"] {
+    width: 45px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255), 0 0 0 3px #020929;
+}
+#text-input {
+    border: 2px solid rgb(134, 119, 119);
+    padding: 20px;
+    margin: 10px 5px 10px 5px;
+    min-height: 50vh;
+}
+.active {
+    background-color: purple;
+}
